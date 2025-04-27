@@ -1,0 +1,24 @@
+<span id="a">ahmadfurqan2207@gmail.com</span>:<span id="b">~</span><span id="c">$</span> cd afurqan/<!-- laglaglaglaglaglag -->about
+<span id="a">ahmadfurqan2207@gmail.com</span>:<span id="b">~</span><span id="c">$</span> cat <!-- laglaglaglaglaglag -->afurqan.txt<br/><br/>
+<p>Hello! My name is Ahmad Furqan.</p><!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+<p>
+An experienced Network Security Engineer with a Bachelor's degree in Information Technology from Gunadarma University (2015-2019) and a graduate of SMK WIKRAMA BOGOR majoring in Computer and Network Engineering (2012-2015). Currently pursuing a career at Caraka Komunika Indonesia, Jakarta, focusing on IT Infrastructure & Network Security. Possesses comprehensive expertise in various technologies including Mikrotik, Cisco, PFSense, Forcepoint, as well as Linux and Windows Server operating systems. Experienced in virtualization management using VM ESXi, Hyper-V, and Nutanix. Proficient in various tools and technologies including Grafana, Zabbix, SIEM, System Monitoring, vCenter Server, with strong capabilities in Computer Networking, Database Management, and Network Security.
+</p>
+<p>
+<b>Certifications:</b><br/>
+Ethical Hacker, CCNA Routing and Switching, Oracle, MTCNA (Mikrotik Certified Network Associate)
+</p>
+<p>
+<b>Work Experience:</b><br/>
+<b>PT. Caraka Komunika Indonesia</b> - Network Security Engineer (April 2023 - Present, 2 years 1 month)<br/>
+<b>PT. Rekan Andalan Sukses (RAS)</b> - Network Security Engineer (October 2022 - April 2023, 7 months)<br/><br/>
+<b>Indonusa Telemedia | TRANSVISION</b> - IT Ops Infrastructure (September 2020 - October 2022, 2 years 2 months)<br/><br/>
+<b>PT Indolakto</b> - IT Support (August 2014 - November 2014, 4 months)<br/>
+</p>
+<p>
+<b>Contact:</b><br/>
+Whatsapp: <a href="https://wa.me/628161153370" target="_blank">here</a><br/>
+Email: <a href="mailto:ahmadfurqan2207[at]gmail.com">ahmadfurqan2207@gmail.com</a><br/>
+LinkedIn: <a href="https://www.linkedin.com/in/afurqan" target="_blank">afurqan</a>
+</p>
+<span id="a">ahmadfurqan2207@gmail.com</span>:<span id="b">~</span><span id="c">$</span> exit
