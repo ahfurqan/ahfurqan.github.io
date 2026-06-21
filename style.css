@@ -126,11 +126,33 @@ padding:18px 24px;
 
 .logo{
 
-display:flex;
-align-items:center;
-gap:14px;
-
 text-decoration:none;
+
+font-size:30px;
+
+font-weight:900;
+
+letter-spacing:-1px;
+
+color:white;
+
+transition:.3s;
+
+position:relative;
+
+}
+
+.logo::after{
+
+content:".";
+
+color:#2563eb;
+
+}
+
+.logo:hover{
+
+opacity:.9;
 
 }
 
