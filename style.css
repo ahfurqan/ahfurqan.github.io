@@ -678,3 +678,37 @@ footer h3{
 }
 
 }
+
+.active{
+color:#00E5FF !important;
+}
+
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.mouse-glow{
+position:fixed;
+width:300px;
+height:300px;
+border-radius:50%;
+pointer-events:none;
+z-index:-1;
+
+background:
+radial-gradient(
+circle,
+rgba(0,229,255,.08),
+transparent 70%
+);
+
+transform:
+translate(-50%,-50%);
+}
