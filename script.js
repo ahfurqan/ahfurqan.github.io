@@ -1,34 +1,12 @@
-/* ===================================
-   NAVBAR SCROLL EFFECT
-=================================== */
+```javascript
+/* =====================================
+   PORTFOLIO V3
+   Ahmad Furqan
+===================================== */
 
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-
-    if(window.scrollY > 50){
-
-        navbar.style.background =
-        'rgba(5,8,22,.95)';
-
-        navbar.style.boxShadow =
-        '0 10px 30px rgba(0,0,0,.25)';
-
-    }else{
-
-        navbar.style.background =
-        'rgba(5,8,22,.8)';
-
-        navbar.style.boxShadow =
-        'none';
-    }
-
-});
-
-
-/* ===================================
+/* =====================================
    ACTIVE MENU
-=================================== */
+===================================== */
 
 const sections =
 document.querySelectorAll("section");
@@ -36,30 +14,36 @@ document.querySelectorAll("section");
 const navLinks =
 document.querySelectorAll(".menu a");
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
 let current = "";
 
-sections.forEach(section=>{
+sections.forEach(section => {
 
 const sectionTop =
-section.offsetTop - 120;
+section.offsetTop - 150;
 
-if(window.scrollY >= sectionTop){
+const sectionHeight =
+section.offsetHeight;
 
-current = section.getAttribute("id");
-
+if(
+window.scrollY >= sectionTop &&
+window.scrollY <
+sectionTop + sectionHeight
+){
+current =
+section.getAttribute("id");
 }
 
 });
 
-navLinks.forEach(link=>{
+navLinks.forEach(link => {
 
 link.classList.remove("active");
 
 if(
-link.getAttribute("href") ===
-`#${current}`
+link.getAttribute("href")
+=== "#" + current
 ){
 link.classList.add("active");
 }
@@ -68,33 +52,20 @@ link.classList.add("active");
 
 });
 
+/* =====================================
+   REVEAL ANIMATION
+===================================== */
 
-/* ===================================
-   SCROLL REVEAL
-=================================== */
-
-const revealElements =
-document.querySelectorAll(
-
-'.glass-card,\
-.timeline-item,\
-.project-card,\
-.stat-card,\
-.stack-grid span,\
-.architecture-card'
-
-);
-
-const revealObserver =
+const observer =
 new IntersectionObserver(
 
-(entries)=>{
+(entries) => {
 
-entries.forEach(entry=>{
+entries.forEach(entry => {
 
 if(entry.isIntersecting){
 
-entry.target.classList.add('show');
+entry.target.classList.add("show");
 
 }
 
@@ -108,111 +79,226 @@ threshold:0.15
 
 );
 
-revealElements.forEach(el=>{
+document
+.querySelectorAll(
 
-el.classList.add('hidden');
+".card,\
+.stat-card,\
+.timeline-card,\
+.project-card,\
+.arch-node,\
+.contact-item,\
+.skill-item"
 
-revealObserver.observe(el);
+)
+
+.forEach(el => {
+
+el.classList.add("hidden");
+
+observer.observe(el);
 
 });
 
+/* =====================================
+   MOUSE GLOW
+===================================== */
 
-/* ===================================
+const glow =
+document.createElement("div");
+
+glow.className =
+"mouse-glow";
+
+document.body.appendChild(glow);
+
+document.addEventListener(
+"mousemove",
+(e)=>{
+
+glow.style.left =
+e.clientX + "px";
+
+glow.style.top =
+e.clientY + "px";
+
+}
+);
+
+/* =====================================
+   NAVBAR SCROLL EFFECT
+===================================== */
+
+const navbar =
+document.querySelector(".navbar");
+
+window.addEventListener(
+"scroll",
+()=>{
+
+if(window.scrollY > 50){
+
+navbar.style.background =
+"rgba(15,23,42,.90)";
+
+navbar.style.borderColor =
+"rgba(255,255,255,.10)";
+
+navbar.style.backdropFilter =
+"blur(24px)";
+
+}else{
+
+navbar.style.background =
+"rgba(15,23,42,.70)";
+
+navbar.style.borderColor =
+"rgba(255,255,255,.08)";
+
+}
+
+}
+);
+
+/* =====================================
+   SMOOTH BUTTON EFFECT
+===================================== */
+
+document
+.querySelectorAll(
+'a[href^="#"]'
+)
+
+.forEach(anchor => {
+
+anchor.addEventListener(
+"click",
+
+function(e){
+
+e.preventDefault();
+
+const target =
+document.querySelector(
+this.getAttribute("href")
+);
+
+if(target){
+
+target.scrollIntoView({
+
+behavior:"smooth",
+block:"start"
+
+});
+
+}
+
+}
+
+);
+
+});
+
+/* =====================================
+   HERO TAG ANIMATION
+===================================== */
+
+const tags =
+document.querySelectorAll(
+".hero-tags span"
+);
+
+tags.forEach((tag,index)=>{
+
+tag.style.animationDelay =
+(index * 0.08) + "s";
+
+});
+
+/* =====================================
+   FADE IN HERO
+===================================== */
+
+window.addEventListener(
+"load",
+()=>{
+
+document.body.classList.add(
+"loaded"
+);
+
+}
+);
+
+/* =====================================
    COUNTER ANIMATION
-=================================== */
+===================================== */
 
 const counters =
-document.querySelectorAll('.stat-card h3');
+document.querySelectorAll(
+".stat-card h3"
+);
 
-let counterStarted = false;
+const animateCounter = (counter)=>{
 
-function animateCounters(){
-
-if(counterStarted) return;
-
-counterStarted = true;
-
-counters.forEach(counter=>{
-
-const text =
+const target =
 counter.innerText;
 
-let target = 0;
+const numeric =
+parseFloat(
+target.replace(/[^\d.]/g,"")
+);
 
-if(text.includes('5')){
-target = 5;
-}
+if(isNaN(numeric))
+return;
 
-if(text.includes('50')){
-target = 50;
-}
-
-if(text.includes('99.9')){
-target = 100;
-}
-
-if(text.includes('24')){
-target = 24;
-}
-
-let count = 0;
+let current = 0;
 
 const increment =
-target / 60;
+numeric / 50;
 
-const update = ()=>{
+const updateCounter = ()=>{
 
-count += increment;
+if(current < numeric){
 
-if(count < target){
+current += increment;
 
-if(target === 100){
-
-counter.innerText =
-count.toFixed(1) + '%';
-
-}else{
+if(target.includes("%")){
 
 counter.innerText =
-Math.floor(count) + '+';
+current.toFixed(1) + "%";
+
+}
+else if(target.includes("+")){
+
+counter.innerText =
+Math.floor(current) + "+";
+
+}
+else{
+
+counter.innerText =
+Math.floor(current);
 
 }
 
-requestAnimationFrame(update);
-
-}else{
-
-if(target === 100){
-
-counter.innerText =
-'99.9%';
-
-}else if(target === 24){
-
-counter.innerText =
-'24/7';
+requestAnimationFrame(
+updateCounter
+);
 
 }else{
 
 counter.innerText =
-target + '+';
-
-}
+target;
 
 }
 
 };
 
-update();
+updateCounter();
 
-});
-
-}
-
-const statsSection =
-document.querySelector('.stats-section');
-
-if(statsSection){
+};
 
 const statsObserver =
 new IntersectionObserver(
@@ -223,7 +309,15 @@ entries.forEach(entry=>{
 
 if(entry.isIntersecting){
 
-animateCounters();
+animateCounter(
+
+entry.target.querySelector("h3")
+
+);
+
+statsObserver.unobserve(
+entry.target
+);
 
 }
 
@@ -232,233 +326,60 @@ animateCounters();
 },
 
 {
-threshold:0.3
+threshold:0.5
 }
 
 );
-
-statsObserver.observe(statsSection);
-
-}
-
-
-/* ===================================
-   3D HOVER CARD
-=================================== */
-
-const cards =
-document.querySelectorAll(
-
-'.project-card,\
-.timeline-item,\
-.stat-card'
-
-);
-
-cards.forEach(card=>{
-
-card.addEventListener('mousemove',(e)=>{
-
-const rect =
-card.getBoundingClientRect();
-
-const x =
-e.clientX - rect.left;
-
-const y =
-e.clientY - rect.top;
-
-const rotateY =
-((x / rect.width)-0.5) * 8;
-
-const rotateX =
-((y / rect.height)-0.5) * -8;
-
-card.style.transform =
-
-`perspective(1000px)
-rotateX(${rotateX}deg)
-rotateY(${rotateY}deg)
-translateY(-8px)`;
-
-});
-
-card.addEventListener('mouseleave',()=>{
-
-card.style.transform = '';
-
-});
-
-});
-
-
-/* ===================================
-   HERO TYPING EFFECT
-=================================== */
-
-const heroTitle =
-document.querySelector('.hero h2');
-
-if(heroTitle){
-
-const originalText =
-heroTitle.innerText;
-
-heroTitle.innerText = '';
-
-let i = 0;
-
-function typeEffect(){
-
-if(i < originalText.length){
-
-heroTitle.innerText +=
-originalText.charAt(i);
-
-i++;
-
-setTimeout(typeEffect,40);
-
-}
-
-}
-
-setTimeout(typeEffect,500);
-
-}
-
-
-/* ===================================
-   PARALLAX HERO
-=================================== */
-
-window.addEventListener('mousemove',(e)=>{
-
-const profile =
-document.querySelector('.profile-card');
-
-if(!profile) return;
-
-const x =
-(window.innerWidth / 2 - e.clientX)
-/ 40;
-
-const y =
-(window.innerHeight / 2 - e.clientY)
-/ 40;
-
-profile.style.transform =
-
-`translate(${x}px, ${y}px)`;
-
-});
-
-
-/* ===================================
-   SMOOTH SCROLL
-=================================== */
 
 document
-.querySelectorAll('a[href^="#"]')
-.forEach(anchor=>{
+.querySelectorAll(".stat-card")
+.forEach(card => {
 
-anchor.addEventListener('click',
-function(e){
-
-e.preventDefault();
-
-const target =
-document.querySelector(
-this.getAttribute('href')
-);
-
-if(target){
-
-target.scrollIntoView({
-
-behavior:'smooth',
-block:'start'
+statsObserver.observe(card);
 
 });
+
+/* =====================================
+   PROJECT CARD HOVER
+===================================== */
+
+document
+.querySelectorAll(".project-card")
+.forEach(card => {
+
+card.addEventListener(
+"mouseenter",
+()=>{
+
+card.style.transform =
+"translateY(-6px)";
 
 }
-
-});
-
-});
-
-
-/* ===================================
-   PROGRESS BAR ANIMATION
-=================================== */
-
-const bars =
-document.querySelectorAll(
-'.bar span'
 );
 
-const barObserver =
-new IntersectionObserver(
+card.addEventListener(
+"mouseleave",
+()=>{
 
-(entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-const width =
-entry.target.style.width;
-
-entry.target.style.width =
-'0';
-
-setTimeout(()=>{
-
-entry.target.style.width =
-width;
-
-},200);
+card.style.transform =
+"translateY(0px)";
 
 }
-
-});
-
-},
-
-{
-threshold:0.3
-}
-
 );
 
-bars.forEach(bar=>{
-
-barObserver.observe(bar);
-
 });
 
-
-/* ===================================
-   FLOATING GLOW EFFECT
-=================================== */
-
-const glow =
-document.createElement('div');
-
-glow.classList.add('mouse-glow');
-
-document.body.appendChild(glow);
-
-window.addEventListener('mousemove',(e)=>{
-
-glow.style.left =
-e.clientX + 'px';
-
-glow.style.top =
-e.clientY + 'px';
-
-});
+/* =====================================
+   CONSOLE LOG
+===================================== */
 
 console.log(
-'Ahmad Furqan Portfolio Loaded'
+"%cAhmad Furqan Portfolio V3",
+"color:#3b82f6;font-size:18px;font-weight:bold;"
 );
+
+console.log(
+"%cInfrastructure & Security Engineer",
+"color:#94a3b8;font-size:12px;"
+);
+```
