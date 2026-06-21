@@ -126,36 +126,31 @@ padding:18px 24px;
 
 .logo{
 
+display:flex;
+align-items:center;
+
 text-decoration:none;
 
-font-size:30px;
-
+font-size:28px;
 font-weight:900;
-
-letter-spacing:-1px;
 
 color:white;
 
-transition:.3s;
-
-position:relative;
+letter-spacing:-1px;
 
 }
 
-.logo::after{
+.logo::before{
 
-content:".";
+content:"◉";
+
+font-size:14px;
 
 color:#2563eb;
 
-}
-
-.logo:hover{
-
-opacity:.9;
+margin-right:10px;
 
 }
-
 .nav-menu{
 
 display:flex;
