@@ -195,6 +195,22 @@ font-weight:600;
 
 }
 
+.menu-toggle{
+
+display:none;
+
+background:none;
+border:none;
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+padding:0;
+
+}
 /* ===================================
    HERO
 =================================== */
@@ -800,20 +816,52 @@ grid-template-columns:1fr;
 
 @media(max-width:768px){
 
+.menu-toggle{
+display:block;
+}
+
+.btn-nav{
+display:none;
+}
+
 .nav-wrapper{
 
-flex-direction:column;
+position:relative;
 
-gap:15px;
+padding:18px 20px;
 
 }
 
 .nav-menu{
 
-flex-wrap:wrap;
+display:none;
 
-justify-content:center;
+position:absolute;
 
+top:75px;
+right:0;
+
+width:220px;
+
+flex-direction:column;
+
+gap:15px;
+
+padding:20px;
+
+background:#0f172a;
+
+border:1px solid #1e293b;
+
+border-radius:16px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.4);
+
+}
+
+.nav-menu.active{
+display:flex;
 }
 
 .highlight-grid,
@@ -824,9 +872,13 @@ grid-template-columns:1fr;
 
 }
 
+.hero-grid{
+grid-template-columns:1fr;
+}
+
 .hero{
 
-padding-top:180px;
+padding-top:140px;
 
 }
 
@@ -834,6 +886,14 @@ padding-top:180px;
 
 font-size:48px;
 
+}
+
+.hero-image{
+order:-1;
+}
+
+.profile-card img{
+height:350px;
 }
 
 .section-header h2{
