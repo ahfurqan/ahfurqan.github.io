@@ -1,16 +1,14 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Ahmad Furqan | Infrastructure & Security Engineer</title>
 
 <meta name="description"
-content="Infrastructure & Security Engineer specializing in VMware, Forcepoint, Monitoring Platform, Linux Administration, Wazuh SIEM, and Enterprise Infrastructure.">
+content="Infrastructure & Security Engineer specializing in VMware, Forcepoint, Linux, Monitoring Platform, Wazuh SIEM, Docker and Enterprise Infrastructure">
 
 <link rel="stylesheet" href="style.css">
 
@@ -20,50 +18,27 @@ content="Infrastructure & Security Engineer specializing in VMware, Forcepoint, 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <script defer src="script.js"></script>
-
 </head>
 
 <body>
 
-<div class="background"></div>
-
-<!-- ===================================== -->
-<!-- NAVBAR -->
-<!-- ===================================== -->
+<div class="bg-grid"></div>
 
 <nav class="navbar">
 
-<div class="nav-container">
+<div class="container nav-wrapper">
 
-<a href="#" class="logo">
-AF
-</a>
+<a href="#" class="logo">AF</a>
 
-<ul class="menu">
-
-<li>
-<a href="#about">About</a>
-</li>
-
-<li>
-<a href="#experience">Experience</a>
-</li>
-
-<li>
-<a href="#architecture">Architecture</a>
-</li>
-
-<li>
-<a href="#projects">Projects</a>
-</li>
-
-<li>
-<a href="#contact">Contact</a>
-</li>
-
+<ul class="nav-menu">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
-<a href="assets/cv.pdf" class="nav-button">
+<a href="assets/cv.pdf" class="btn-nav">
 Download CV
 </a>
 
@@ -71,63 +46,36 @@ Download CV
 
 </nav>
 
-<!-- ===================================== -->
-<!-- HERO -->
-<!-- ===================================== -->
-
 <section class="hero">
 
-<div class="hero-grid">
+<div class="container hero-grid">
 
 <div class="hero-content">
 
-<div class="badge">
-
-<span class="badge-dot"></span>
-
-Available For Opportunities
-
+<div class="hero-badge">
+<span></span>
+AVAILABLE FOR OPPORTUNITIES
 </div>
 
 <h1>
-
 Infrastructure &
 Security Engineer
-
 </h1>
-
-<h2>
-
-Building Secure,
-Scalable &
-Reliable Infrastructure
-
-</h2>
 
 <p>
 
-Experienced Infrastructure & Security Engineer with over
-5 years of experience managing enterprise virtualization,
-network security, monitoring platforms, Linux systems,
-Windows Server, disaster recovery solutions and
-datacenter operations.
+Hi, I'm Ahmad Furqan.
+
+I specialize in enterprise infrastructure,
+virtualization, network security,
+monitoring platforms and datacenter operations.
+
+Focused on building secure,
+scalable and highly available systems.
 
 </p>
 
-<div class="hero-tags">
-
-<span>VMware</span>
-<span>Forcepoint</span>
-<span>Mikrotik</span>
-<span>Linux</span>
-<span>Docker</span>
-<span>Grafana</span>
-<span>Prometheus</span>
-<span>Wazuh</span>
-
-</div>
-
-<div class="hero-actions">
+<div class="hero-buttons">
 
 <a href="#projects" class="btn-primary">
 View Projects
@@ -139,19 +87,32 @@ Contact Me
 
 </div>
 
+<div class="hero-stack">
+
+<span>VMware</span>
+<span>Forcepoint</span>
+<span>Linux</span>
+<span>Docker</span>
+<span>Grafana</span>
+<span>Prometheus</span>
+<span>Wazuh</span>
+<span>MinIO</span>
+
+</div>
+
 </div>
 
 <div class="hero-image">
 
 <div class="profile-card">
 
-<img src="assets/profile.jpeg" alt="Ahmad Furqan">
+<img
+src="assets/profile.jpeg"
+alt="Ahmad Furqan">
 
-<div class="profile-footer">
+<div class="profile-info">
 
-<h3>
-Ahmad Furqan
-</h3>
+<h3>Ahmad Furqan</h3>
 
 <p>
 Infrastructure & Security Engineer
@@ -167,61 +128,37 @@ Infrastructure & Security Engineer
 
 </section>
 
-<!-- ===================================== -->
-<!-- STATS -->
-<!-- ===================================== -->
+<section class="highlights">
 
-<section class="stats">
+<div class="container">
 
-<div class="stats-grid">
+<div class="highlight-grid">
 
-<div class="stat-card">
-
+<div class="highlight-card">
 <h3>5+</h3>
-
-<p>
-Years Experience
-</p>
-
+<p>Years Experience</p>
 </div>
 
-<div class="stat-card">
-
+<div class="highlight-card">
 <h3>50+</h3>
-
-<p>
-Projects Delivered
-</p>
-
+<p>Projects Delivered</p>
 </div>
 
-<div class="stat-card">
-
+<div class="highlight-card">
 <h3>99.9%</h3>
-
-<p>
-Infrastructure Uptime
-</p>
-
+<p>Infrastructure Uptime</p>
 </div>
 
-<div class="stat-card">
-
+<div class="highlight-card">
 <h3>24/7</h3>
-
-<p>
-Monitoring Coverage
-</p>
+<p>Monitoring Coverage</p>
+</div>
 
 </div>
 
 </div>
 
 </section>
-
-<!-- ===================================== -->
-<!-- ABOUT -->
-<!-- ===================================== -->
 
 <section id="about">
 
@@ -229,9 +166,7 @@ Monitoring Coverage
 
 <div class="section-header">
 
-<span>
-ABOUT
-</span>
+<span>ABOUT</span>
 
 <h2>
 Professional Summary
@@ -239,54 +174,31 @@ Professional Summary
 
 </div>
 
-<div class="card">
+<div class="about-card">
 
 <p>
 
-Experienced Infrastructure & Security Engineer specializing
-in enterprise virtualization, network security, monitoring
-platforms, server administration, SIEM implementation and
-high availability infrastructure.
+Experienced Infrastructure & Security Engineer
+with expertise in virtualization, firewall management,
+server administration, monitoring systems,
+SIEM implementation and disaster recovery.
 
-Passionate about building secure and scalable systems that
-support critical business operations while maintaining
-performance, reliability and operational excellence.
+Experienced managing VMware environments,
+Forcepoint NGFW, Linux servers,
+monitoring platforms and enterprise infrastructure.
 
 </p>
 
-<div class="skills-grid">
+<div class="about-grid">
 
-<div class="skill-item">
-VMware Virtualization
-</div>
-
-<div class="skill-item">
-Forcepoint NGFW
-</div>
-
-<div class="skill-item">
-Linux Administration
-</div>
-
-<div class="skill-item">
-Windows Server
-</div>
-
-<div class="skill-item">
-Monitoring Platform
-</div>
-
-<div class="skill-item">
-Wazuh SIEM
-</div>
-
-<div class="skill-item">
-Docker Platform
-</div>
-
-<div class="skill-item">
-Disaster Recovery
-</div>
+<div class="about-item">VMware Virtualization</div>
+<div class="about-item">Forcepoint NGFW</div>
+<div class="about-item">Linux Administration</div>
+<div class="about-item">Windows Server</div>
+<div class="about-item">Monitoring Platform</div>
+<div class="about-item">Wazuh SIEM</div>
+<div class="about-item">Docker Platform</div>
+<div class="about-item">Disaster Recovery</div>
 
 </div>
 
@@ -296,19 +208,13 @@ Disaster Recovery
 
 </section>
 
-<!-- ===================================== -->
-<!-- TECHNOLOGY STACK -->
-<!-- ===================================== -->
-
-<section id="stack">
+<section id="skills">
 
 <div class="container">
 
 <div class="section-header">
 
-<span>
-TECHNOLOGY STACK
-</span>
+<span>TECHNICAL STACK</span>
 
 <h2>
 Core Technologies
@@ -316,13 +222,13 @@ Core Technologies
 
 </div>
 
-<div class="tech-grid">
+<div class="skills-grid">
 
 <span>VMware ESXi</span>
-<span>vCenter Server</span>
+<span>vCenter</span>
 <span>Nutanix</span>
 <span>Forcepoint NGFW</span>
-<span>Mikrotik RouterOS</span>
+<span>Mikrotik</span>
 <span>Linux</span>
 <span>Windows Server</span>
 <span>Docker</span>
@@ -334,295 +240,14 @@ Core Technologies
 <span>Wazuh</span>
 <span>OpenSearch</span>
 <span>SafeLine WAF</span>
-<span>Veeam Backup</span>
 <span>MinIO</span>
+<span>Veeam</span>
 
 </div>
 
 </div>
 
 </section>
-
-<!-- ===================================== -->
-<!-- EXPERIENCE -->
-<!-- ===================================== -->
-
-<section id="experience">
-
-<div class="container">
-
-<div class="section-header">
-
-<span>
-EXPERIENCE
-</span>
-
-<h2>
-Professional Journey
-</h2>
-
-</div>
-
-<div class="timeline">
-
-<div class="timeline-card">
-
-<div class="timeline-year">
-2024 - Present
-</div>
-
-<div class="timeline-content">
-
-<h3>
-Senior Infrastructure & Security Engineer
-</h3>
-
-<ul>
-
-<li>Manage VMware ESXi virtualization infrastructure.</li>
-
-<li>Administer Forcepoint Firewall security policies and VPN.</li>
-
-<li>Deploy and manage monitoring platform using Grafana and Prometheus.</li>
-
-<li>Implement Wazuh SIEM and centralized security monitoring.</li>
-
-<li>Maintain enterprise infrastructure documentation and standards.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<div class="timeline-card">
-
-<div class="timeline-year">
-2022 - 2024
-</div>
-
-<div class="timeline-content">
-
-<h3>
-Infrastructure Engineer
-</h3>
-
-<ul>
-
-<li>Linux and Windows Server administration.</li>
-
-<li>Monitoring platform implementation.</li>
-
-<li>Network troubleshooting and optimization.</li>
-
-<li>Backup and recovery operations.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<div class="timeline-card">
-
-<div class="timeline-year">
-2020 - 2022
-</div>
-
-<div class="timeline-content">
-
-<h3>
-System Administrator
-</h3>
-
-<ul>
-
-<li>Server deployment and maintenance.</li>
-
-<li>Virtualization management.</li>
-
-<li>Network support and operations.</li>
-
-<li>Infrastructure monitoring.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-```html
-<!-- ===================================== -->
-<!-- ARCHITECTURE -->
-<!-- ===================================== -->
-
-<section id="architecture">
-
-<div class="container">
-
-<div class="section-header">
-
-<span>
-ARCHITECTURE
-</span>
-
-<h2>
-Enterprise Infrastructure Architecture
-</h2>
-
-</div>
-
-<div class="architecture-card">
-
-<div class="arch-layer">
-
-<div class="arch-node single">
-
-<h3>Internet</h3>
-
-<p>
-Public Connectivity Layer
-</p>
-
-</div>
-
-</div>
-
-<div class="arch-connector"></div>
-
-<div class="arch-layer">
-
-<div class="arch-node single">
-
-<h3>Forcepoint NGFW</h3>
-
-<p>
-Firewall • VPN • NAT • Security Policies
-</p>
-
-</div>
-
-</div>
-
-<div class="arch-connector"></div>
-
-<div class="arch-layer">
-
-<div class="arch-node single">
-
-<h3>Core Network</h3>
-
-<p>
-Routing • VLAN • Switching
-</p>
-
-</div>
-
-</div>
-
-<div class="arch-connector"></div>
-
-<div class="arch-grid">
-
-<div class="arch-node">
-
-<h3>VMware Cluster</h3>
-
-<p>
-ESXi • vCenter • Virtualization
-</p>
-
-</div>
-
-<div class="arch-node">
-
-<h3>Monitoring Stack</h3>
-
-<p>
-Grafana • Prometheus • Alertmanager
-</p>
-
-</div>
-
-<div class="arch-node">
-
-<h3>Security Stack</h3>
-
-<p>
-Wazuh • OpenSearch
-</p>
-
-</div>
-
-</div>
-
-<div class="arch-connector"></div>
-
-<div class="arch-grid">
-
-<div class="arch-node">
-
-<h3>Linux Servers</h3>
-
-<p>
-Application Services
-</p>
-
-</div>
-
-<div class="arch-node">
-
-<h3>Windows Server</h3>
-
-<p>
-AD • DNS • DHCP
-</p>
-
-</div>
-
-<div class="arch-node">
-
-<h3>Container Platform</h3>
-
-<p>
-Docker • Rancher • Kubernetes
-</p>
-
-</div>
-
-</div>
-
-<div class="arch-connector"></div>
-
-<div class="arch-layer">
-
-<div class="arch-node single">
-
-<h3>Backup & Recovery</h3>
-
-<p>
-Veeam Backup • MinIO Storage
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================== -->
-<!-- PROJECTS -->
-<!-- ===================================== -->
 
 <section id="projects">
 
@@ -630,9 +255,7 @@ Veeam Backup • MinIO Storage
 
 <div class="section-header">
 
-<span>
-PROJECTS
-</span>
+<span>PROJECTS</span>
 
 <h2>
 Featured Projects
@@ -656,22 +279,18 @@ Enterprise Monitoring Platform
 
 <p>
 
-Centralized monitoring platform built using
-Grafana, Prometheus, Alertmanager,
-Node Exporter, SNMP Exporter and
-Blackbox Exporter.
+Built a centralized monitoring platform using
+Grafana, Prometheus, Alertmanager, Node Exporter,
+SNMP Exporter and Blackbox Exporter.
 
 </p>
 
 <ul>
 
-<li>Infrastructure Monitoring</li>
-
-<li>Network Monitoring</li>
-
-<li>SSL Monitoring</li>
-
+<li>100+ Devices Monitoring</li>
+<li>Infrastructure Visibility</li>
 <li>Real-Time Alerting</li>
+<li>SSL Monitoring</li>
 
 </ul>
 
@@ -693,21 +312,17 @@ Security Monitoring Platform
 
 <p>
 
-SIEM platform utilizing Wazuh,
-OpenSearch and security analytics
-for centralized visibility and
-threat detection.
+Implemented SIEM architecture using
+Wazuh and OpenSearch for security monitoring,
+threat detection and log analytics.
 
 </p>
 
 <ul>
 
 <li>Threat Detection</li>
-
 <li>Security Analytics</li>
-
-<li>Log Correlation</li>
-
+<li>Centralized Logging</li>
 <li>Compliance Monitoring</li>
 
 </ul>
@@ -725,26 +340,23 @@ alt="VMware Infrastructure">
 <div class="project-content">
 
 <h3>
-Virtualization Infrastructure
+Enterprise Virtualization Platform
 </h3>
 
 <p>
 
-Enterprise virtualization platform
-built on VMware ESXi cluster with
-centralized management and backup.
+Managed VMware ESXi Cluster,
+vCenter Server, SAN Storage and
+enterprise backup solutions.
 
 </p>
 
 <ul>
 
 <li>High Availability</li>
-
 <li>Resource Optimization</li>
-
-<li>Business Continuity</li>
-
 <li>Centralized Management</li>
+<li>Disaster Recovery</li>
 
 </ul>
 
@@ -758,36 +370,143 @@ centralized management and backup.
 
 </section>
 
-<!-- ===================================== -->
-<!-- CERTIFICATIONS -->
-<!-- ===================================== -->
+<!-- ========================= -->
+<!-- ARCHITECTURE -->
+<!-- ========================= -->
 
-<section id="certifications">
+<section id="architecture">
 
 <div class="container">
 
 <div class="section-header">
 
-<span>
-CERTIFICATIONS
-</span>
+<span>ARCHITECTURE</span>
 
 <h2>
-Training & Certifications
+Infrastructure Architecture
 </h2>
 
 </div>
 
-<div class="tech-grid">
+<div class="architecture-card">
 
-<span>VMware</span>
-<span>Linux Administration</span>
-<span>Windows Server</span>
-<span>Mikrotik</span>
-<span>Network Security</span>
-<span>Forcepoint NGFW</span>
-<span>Monitoring Platform</span>
-<span>SIEM & Security Monitoring</span>
+<div class="arch-item">
+
+<h3>Internet</h3>
+
+<p>
+Public Network Access
+</p>
+
+</div>
+
+<div class="arch-line"></div>
+
+<div class="arch-item">
+
+<h3>Forcepoint NGFW</h3>
+
+<p>
+Firewall • VPN • NAT • Security Policy
+</p>
+
+</div>
+
+<div class="arch-line"></div>
+
+<div class="arch-item">
+
+<h3>Core Network Layer</h3>
+
+<p>
+Switching • Routing • VLAN
+</p>
+
+</div>
+
+<div class="arch-line"></div>
+
+<div class="arch-grid">
+
+<div class="arch-box">
+
+<h4>VMware Cluster</h4>
+
+<p>
+ESXi • vCenter
+</p>
+
+</div>
+
+<div class="arch-box">
+
+<h4>Monitoring</h4>
+
+<p>
+Grafana • Prometheus
+</p>
+
+</div>
+
+<div class="arch-box">
+
+<h4>Security</h4>
+
+<p>
+Wazuh • OpenSearch
+</p>
+
+</div>
+
+</div>
+
+<div class="arch-line"></div>
+
+<div class="arch-grid">
+
+<div class="arch-box">
+
+<h4>Linux Servers</h4>
+
+<p>
+Applications
+</p>
+
+</div>
+
+<div class="arch-box">
+
+<h4>Windows Server</h4>
+
+<p>
+AD • DNS • DHCP
+</p>
+
+</div>
+
+<div class="arch-box">
+
+<h4>Container Platform</h4>
+
+<p>
+Docker • Rancher
+</p>
+
+</div>
+
+</div>
+
+<div class="arch-line"></div>
+
+<div class="arch-item">
+
+<h3>Backup & Recovery</h3>
+
+<p>
+Veeam • MinIO
+</p>
+
+</div>
 
 </div>
 
@@ -795,9 +514,116 @@ Training & Certifications
 
 </section>
 
-<!-- ===================================== -->
+<!-- ========================= -->
+<!-- EXPERIENCE -->
+<!-- ========================= -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-header">
+
+<span>EXPERIENCE</span>
+
+<h2>
+Professional Experience
+</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-year">
+
+2024 - Present
+
+</div>
+
+<div class="timeline-content">
+
+<h3>
+Senior Infrastructure & Security Engineer
+</h3>
+
+<ul>
+
+<li>VMware ESXi Cluster Administration</li>
+<li>Forcepoint Firewall Management</li>
+<li>Enterprise Monitoring Platform</li>
+<li>Wazuh Security Monitoring</li>
+<li>Datacenter Operations</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-year">
+
+2022 - 2024
+
+</div>
+
+<div class="timeline-content">
+
+<h3>
+Infrastructure Engineer
+</h3>
+
+<ul>
+
+<li>Linux Administration</li>
+<li>Monitoring Platform Deployment</li>
+<li>Network Operations</li>
+<li>Backup & Recovery</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-year">
+
+2020 - 2022
+
+</div>
+
+<div class="timeline-content">
+
+<h3>
+System Administrator
+</h3>
+
+<ul>
+
+<li>Windows Server Administration</li>
+<li>Virtualization Management</li>
+<li>Network Support</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
 <!-- CONTACT -->
-<!-- ===================================== -->
+<!-- ========================= -->
 
 <section id="contact">
 
@@ -805,9 +631,7 @@ Training & Certifications
 
 <div class="section-header">
 
-<span>
-CONTACT
-</span>
+<span>CONTACT</span>
 
 <h2>
 Let's Connect
@@ -822,17 +646,7 @@ Let's Connect
 <h4>Email</h4>
 
 <p>
-your@email.com
-</p>
-
-</div>
-
-<div class="contact-item">
-
-<h4>LinkedIn</h4>
-
-<p>
-linkedin.com/in/ahmadfurqan
+ahmadfurqan@example.com
 </p>
 
 </div>
@@ -843,6 +657,16 @@ linkedin.com/in/ahmadfurqan
 
 <p>
 github.com/ahfurqan
+</p>
+
+</div>
+
+<div class="contact-item">
+
+<h4>LinkedIn</h4>
+
+<p>
+linkedin.com/in/ahmadfurqan
 </p>
 
 </div>
@@ -862,10 +686,6 @@ Bogor, Indonesia
 </div>
 
 </section>
-
-<!-- ===================================== -->
-<!-- FOOTER -->
-<!-- ===================================== -->
 
 <footer>
 
@@ -889,5 +709,3 @@ Infrastructure & Security Engineer
 
 </body>
 </html>
-```
-
