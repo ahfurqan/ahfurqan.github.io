@@ -11,30 +11,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script defer src="script.js"></script>
-
 </head>
+
 <body>
 
 <div class="bg"></div>
 
-<nav>
+<nav class="navbar">
+
 <div class="logo">AF</div>
 
-<ul>
+<ul class="menu">
 <li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
 <li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-left">
 
 <span class="status">
-● Available For Opportunities
+🟢 Available for Opportunities
 </span>
 
 <h1>Ahmad Furqan</h1>
@@ -45,9 +47,9 @@ Security Engineer
 </h2>
 
 <p>
-Building secure, scalable and highly available infrastructure
-using VMware, Forcepoint, Linux, Monitoring Platform,
-and Security Operations.
+Experienced in VMware, Forcepoint Firewall,
+Linux Administration, Monitoring Platform,
+Wazuh SIEM, and Enterprise Infrastructure.
 </p>
 
 <div class="hero-buttons">
@@ -64,22 +66,28 @@ View Projects
 
 <div class="stats">
 
-<div>
+<div class="stat">
 <h3>5+</h3>
-<span>Years Experience</span>
+<p>Years Experience</p>
 </div>
 
-<div>
+<div class="stat">
 <h3>50+</h3>
-<span>Projects</span>
+<p>Projects</p>
 </div>
 
-<div>
+<div class="stat">
 <h3>99.9%</h3>
-<span>Uptime</span>
+<p>Uptime</p>
 </div>
 
 </div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="assets/profile.jpg" alt="Profile">
 
 </div>
 
@@ -92,59 +100,20 @@ View Projects
 <div class="glass">
 
 <p>
-Experienced IT Infrastructure & Security Engineer with over 5 years of experience managing enterprise virtualization, network security, monitoring systems, Linux servers, Windows Server, and datacenter operations.
+Experienced IT Infrastructure & Security Engineer with more than 5 years of experience managing enterprise virtualization, network security, monitoring systems, Linux servers, Windows Server and datacenter infrastructure.
 </p>
 
-<div class="about-list">
+<div class="specialization">
 
-<div>✓ VMware Virtualization</div>
-<div>✓ Forcepoint Firewall</div>
-<div>✓ Linux Administration</div>
-<div>✓ Grafana Monitoring</div>
-<div>✓ Wazuh SIEM</div>
-<div>✓ Disaster Recovery</div>
+<span>VMware ESXi</span>
+<span>vCenter</span>
+<span>Forcepoint</span>
+<span>Mikrotik</span>
+<span>Grafana</span>
+<span>Prometheus</span>
+<span>Wazuh</span>
+<span>Linux</span>
 
-</div>
-
-</div>
-
-</section>
-
-<section id="experience">
-
-<h2>Professional Experience</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<h3>Senior Infrastructure & Security Engineer</h3>
-<span>2024 - Present</span>
-<p>
-VMware ESXi, Forcepoint Firewall,
-Wazuh SIEM, Enterprise Monitoring,
-Datacenter Operations.
-</p>
-</div>
-
-<div class="timeline-item">
-<h3>Infrastructure Engineer</h3>
-<span>2022 - 2024</span>
-<p>
-Linux Administration,
-Grafana Monitoring,
-Backup & Recovery,
-Network Operations.
-</p>
-</div>
-
-<div class="timeline-item">
-<h3>System Administrator</h3>
-<span>2020 - 2022</span>
-<p>
-Windows Server,
-Network Support,
-Virtualization Infrastructure.
-</p>
 </div>
 
 </div>
@@ -159,41 +128,96 @@ Virtualization Infrastructure.
 
 <div class="skill-card">
 <h3>Virtualization</h3>
-VMware ESXi
-<div class="bar"><span style="width:95%"></span></div>
 
-vCenter
+<div class="skill">
+<span>VMware ESXi</span>
 <div class="bar"><span style="width:95%"></span></div>
+</div>
 
-Nutanix
+<div class="skill">
+<span>vCenter</span>
+<div class="bar"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill">
+<span>Nutanix</span>
 <div class="bar"><span style="width:80%"></span></div>
+</div>
+
 </div>
 
 <div class="skill-card">
 <h3>Security</h3>
 
-Forcepoint
+<div class="skill">
+<span>Forcepoint</span>
 <div class="bar"><span style="width:90%"></span></div>
+</div>
 
-VPN
+<div class="skill">
+<span>VPN</span>
 <div class="bar"><span style="width:85%"></span></div>
+</div>
 
-WAF
+<div class="skill">
+<span>WAF</span>
 <div class="bar"><span style="width:80%"></span></div>
+</div>
 
 </div>
 
 <div class="skill-card">
 <h3>Monitoring</h3>
 
-Grafana
+<div class="skill">
+<span>Grafana</span>
 <div class="bar"><span style="width:95%"></span></div>
+</div>
 
-Prometheus
+<div class="skill">
+<span>Prometheus</span>
 <div class="bar"><span style="width:90%"></span></div>
+</div>
 
-Wazuh
+<div class="skill">
+<span>Wazuh</span>
 <div class="bar"><span style="width:85%"></span></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Senior Infrastructure & Security Engineer</h3>
+<span>2024 - Present</span>
+
+<ul>
+<li>VMware ESXi Cluster Management</li>
+<li>Forcepoint Firewall Administration</li>
+<li>Wazuh SIEM Monitoring</li>
+<li>Datacenter Operations</li>
+</ul>
+
+</div>
+
+<div class="timeline-item">
+<h3>Infrastructure Engineer</h3>
+<span>2022 - 2024</span>
+
+<ul>
+<li>Linux Administration</li>
+<li>Grafana Monitoring</li>
+<li>Network Operations</li>
+</ul>
 
 </div>
 
@@ -216,9 +240,9 @@ SNMP Exporter + Blackbox Exporter
 </p>
 
 <ul>
-<li>100+ Devices</li>
-<li>Realtime Alerting</li>
-<li>Centralized Dashboard</li>
+<li>100+ monitored devices</li>
+<li>Realtime alerting</li>
+<li>Centralized dashboard</li>
 </ul>
 
 </div>
@@ -227,14 +251,13 @@ SNMP Exporter + Blackbox Exporter
 <h3>Security Monitoring Platform</h3>
 
 <p>
-Wazuh + OpenSearch +
-Forcepoint Integration
+Wazuh + OpenSearch + Forcepoint Integration
 </p>
 
 <ul>
-<li>SIEM Dashboard</li>
-<li>Threat Detection</li>
-<li>Log Correlation</li>
+<li>Threat detection</li>
+<li>Centralized SIEM</li>
+<li>Security analytics</li>
 </ul>
 
 </div>
@@ -243,14 +266,13 @@ Forcepoint Integration
 <h3>VMware Infrastructure</h3>
 
 <p>
-ESXi Cluster + SAN Storage +
-Backup & DR
+ESXi Cluster + SAN Storage + Backup & DR
 </p>
 
 <ul>
 <li>High Availability</li>
-<li>Centralized Management</li>
 <li>Disaster Recovery</li>
+<li>Centralized Management</li>
 </ul>
 
 </div>
@@ -263,10 +285,10 @@ Backup & DR
 
 <h2>Contact</h2>
 
-<div class="glass contact">
+<div class="glass">
 
-<p>📧 your@email.com</p>
-<p>💼 linkedin.com/in/your-linkedin</p>
+<p>📧 afurqan05@gmail.com</p>
+<p>💼 linkedin.com/in/afurqan</p>
 <p>🐙 github.com/ahfurqan</p>
 <p>📍 Bogor, Indonesia</p>
 
@@ -275,7 +297,11 @@ Backup & DR
 </section>
 
 <footer>
-© 2026 Ahmad Furqan
+
+<h3>Let's Build Secure Infrastructure Together</h3>
+
+<p>© 2026 Ahmad Furqan</p>
+
 </footer>
 
 </body>
