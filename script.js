@@ -9,8 +9,8 @@ const rect=card.getBoundingClientRect();
 const x=e.clientX-rect.left;
 const y=e.clientY-rect.top;
 
-const rotateY=((x/rect.width)-0.5)*12;
-const rotateX=((y/rect.height)-0.5)*-12;
+const rotateY=((x/rect.width)-0.5)*10;
+const rotateX=((y/rect.height)-0.5)*-10;
 
 card.style.transform=
 `perspective(1000px)
