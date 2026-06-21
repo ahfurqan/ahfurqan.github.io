@@ -126,13 +126,11 @@ padding:18px 24px;
 
 .logo{
 
+display:flex;
+align-items:center;
+gap:14px;
+
 text-decoration:none;
-
-font-size:24px;
-
-font-weight:800;
-
-color:white;
 
 }
 
