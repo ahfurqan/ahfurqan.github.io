@@ -712,3 +712,130 @@ transparent 70%
 transform:
 translate(-50%,-50%);
 }
+
+/* ===================================
+   ENTERPRISE ARCHITECTURE V2
+=================================== */
+
+.architecture-card{
+    background:#081123;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    padding:50px;
+}
+
+.arch-top{
+    display:flex;
+    justify-content:center;
+}
+
+.arch-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin:25px 0;
+}
+
+.arch-node{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(0,229,255,.15);
+    border-radius:20px;
+    padding:25px;
+
+    text-align:center;
+
+    backdrop-filter:blur(15px);
+
+    transition:.3s;
+}
+
+.arch-node:hover{
+    transform:translateY(-8px);
+    box-shadow:
+    0 0 30px rgba(0,229,255,.18);
+}
+
+.arch-node{
+    font-size:38px;
+}
+
+.arch-node span{
+    display:block;
+
+    margin-top:15px;
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:700;
+}
+
+.arch-node small{
+    display:block;
+
+    margin-top:8px;
+
+    color:#94A3B8;
+
+    font-size:13px;
+}
+
+.arch-line{
+    width:4px;
+    height:50px;
+
+    margin:auto;
+
+    background:linear-gradient(
+        to bottom,
+        #00E5FF,
+        transparent
+    );
+
+    position:relative;
+}
+
+.arch-line::after{
+    content:"";
+
+    position:absolute;
+
+    bottom:-4px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:12px solid #00E5FF;
+}
+
+.internet{
+    width:260px;
+}
+
+.firewall{
+    width:320px;
+}
+
+.storage{
+    width:350px;
+}
+
+@media(max-width:900px){
+
+.arch-grid{
+    grid-template-columns:1fr;
+}
+
+.internet,
+.firewall,
+.storage{
+    width:100%;
+}
+
+.architecture-card{
+    padding:25px;
+}
+
+}
