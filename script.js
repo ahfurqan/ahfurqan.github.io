@@ -8,7 +8,7 @@ if(menuToggle){
 
 menuToggle.addEventListener("click",()=>{
 
-navMenu.classList.toggle("active");
+navMenu.classList.toggle("mobile-open");
 
 });
 
