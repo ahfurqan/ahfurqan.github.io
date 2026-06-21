@@ -1,18 +1,18 @@
-const cards = document.querySelectorAll(".card");
+document.querySelectorAll(
+'.project-card,.skill-card,.timeline-item'
+).forEach(card=>{
 
-cards.forEach(card=>{
+card.addEventListener('mousemove',e=>{
 
-card.addEventListener("mousemove",(e)=>{
+const rect=card.getBoundingClientRect();
 
-const rect = card.getBoundingClientRect();
+const x=e.clientX-rect.left;
+const y=e.clientY-rect.top;
 
-const x = e.clientX - rect.left;
-const y = e.clientY - rect.top;
+const rotateY=((x/rect.width)-0.5)*12;
+const rotateX=((y/rect.height)-0.5)*-12;
 
-const rotateY = ((x / rect.width)-0.5)*20;
-const rotateX = ((y / rect.height)-0.5)*-20;
-
-card.style.transform =
+card.style.transform=
 `perspective(1000px)
  rotateX(${rotateX}deg)
  rotateY(${rotateY}deg)
@@ -20,9 +20,9 @@ card.style.transform =
 
 });
 
-card.addEventListener("mouseleave",()=>{
+card.addEventListener('mouseleave',()=>{
 
-card.style.transform="rotateX(0) rotateY(0)";
+card.style.transform='';
 
 });
 
