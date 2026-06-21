@@ -365,43 +365,105 @@ System Administrator
 
 <div class="architecture-card">
 
-<pre>
+<div class="arch-top">
+    <div class="arch-node internet">
+        🌐
+        <span>Internet</span>
+    </div>
+</div>
 
-               INTERNET
-                   │
-                   ▼
+<div class="arch-line"></div>
 
-         FORCEPOINT NGFW
+<div class="arch-top">
+    <div class="arch-node firewall">
+        🛡️
+        <span>Forcepoint NGFW</span>
+    </div>
+</div>
 
-                   │
-                   ▼
+<div class="arch-line"></div>
 
-             CORE SWITCH
+<div class="arch-grid">
 
-                   │
-                   ▼
+    <div class="arch-node">
+        🖥️
+        <span>VMware ESXi</span>
+        <small>Virtualization Cluster</small>
+    </div>
 
-           VMWARE CLUSTER
+    <div class="arch-node">
+        ☸️
+        <span>Kubernetes</span>
+        <small>Rancher / K3s</small>
+    </div>
 
-                   │
-                   ▼
-
-            LINUX SERVERS
-
-                   │
-                   ▼
-
-      GRAFANA + PROMETHEUS
-
-                   │
-                   ▼
-
-         WAZUH + OPENSEARCH
-
-</pre>
+    <div class="arch-node">
+        🪟
+        <span>Windows Server</span>
+        <small>AD / DNS / DHCP</small>
+    </div>
 
 </div>
 
+<div class="arch-line"></div>
+
+<div class="arch-grid">
+
+    <div class="arch-node">
+        📊
+        <span>Grafana</span>
+        <small>Monitoring Dashboard</small>
+    </div>
+
+    <div class="arch-node">
+        🔍
+        <span>Prometheus</span>
+        <small>Metrics Collection</small>
+    </div>
+
+    <div class="arch-node">
+        🚨
+        <span>Alertmanager</span>
+        <small>Alerting System</small>
+    </div>
+
+</div>
+
+<div class="arch-line"></div>
+
+<div class="arch-grid">
+
+    <div class="arch-node">
+        🔒
+        <span>Wazuh</span>
+        <small>SIEM Platform</small>
+    </div>
+
+    <div class="arch-node">
+        📁
+        <span>OpenSearch</span>
+        <small>Log Analytics</small>
+    </div>
+
+    <div class="arch-node">
+        🛡️
+        <span>SafeLine WAF</span>
+        <small>Web Protection</small>
+    </div>
+
+</div>
+
+<div class="arch-line"></div>
+
+<div class="arch-top">
+    <div class="arch-node storage">
+        💾
+        <span>MinIO / Veeam</span>
+        <small>Backup & Disaster Recovery</small>
+    </div>
+</div>
+
+</div>
 </section>
 
 <!-- ========================= -->
