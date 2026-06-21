@@ -860,7 +860,7 @@ box-shadow:
 
 }
 
-.nav-menu.active{
+.nav-menu.mobile-open{
 display:flex;
 }
 
@@ -915,7 +915,7 @@ opacity:1;
 transform:translateY(0);
 }
 
-.active{
-color:#ffffff !important;
+.nav-menu a.active{
+color:#ffffff;
 font-weight:600;
 }
